@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shadow and Reflection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Shadow and Reflection</h1>
+  <h2>Shadow demo</h2>
+  <canvas id="shadow" width="600" height="600"></canvas><br />
+  <table>
+    <tr>
+      <td><b>Shadow ray start</b></td>
+      <td>
+        <input type="radio" name="shadow-ray-start" onClick="SetShadowEpsilon(0);" />Zero
+      </td>
+      <td>
+        <input type="radio" name="shadow-ray-start" onClick="SetShadowEpsilon(0.001);" checked />Epsilon
+      </td>
+    </tr>
+  </table>
+  <h2>Reflection demo</h2>
+  <canvas id="reflection" width="600" height="600"></canvas><br />
+
+  <script src="shadow.js"></script>
+  <script src="reflection.js"></script>
+</body>
+
+</html>
