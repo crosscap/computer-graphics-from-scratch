@@ -1,0 +1,24 @@
+canvas {
+    border: 1px grey solid;
+}
+
+tr {
+    background-color: #e0e0e0;
+}
+
+#depth_table {
+    text-align: center;
+    margin: auto;
+}
+
+#depth_td {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}

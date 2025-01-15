@@ -5,3 +5,11 @@ canvas {
 tr {
     background-color: #e6e6fa;
 }
+
+div {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}

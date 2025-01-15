@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hidden surface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Hidden surface</h1>
+  <div id="depth_table">
+    <canvas id="depth" width=600 height=600></canvas><br>
+    <table>
+      <tr>
+        <td><b>Depth buffering &<br>Backface culling</b></td>
+        <td>
+          <input type="radio" name="depth-enabled" onClick="SetDepthEnabled(false);">Disabled</input><br>
+          <input type="radio" name="depth-enabled" onClick="SetDepthEnabled(true);" checked>Enabled</input>
+        </td>
+      </tr>
+      <tr>
+        <td id="depth_td" colspan=2><button onClick="ShuffleCubeTriangles();">Shuffle triangles</button>
+      </tr>
+      <tr>
+        <td><b>Triangle outlines</b></td>
+        <td>
+          <input type="radio" name="outlines-enabled" onClick="SetOutlinesEnabled(false);" checked>Disabled</input><br>
+          <input type="radio" name="outlines-enabled" onClick="SetOutlinesEnabled(true);">Enabled</input>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="depth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shadow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Shadow</h1>
+
+  <div>
+    <canvas id="shadow" width="600" height="600"></canvas><br />
+    <table>
+      <tr>
+        <td><b>Shadow ray start</b></td>
+        <td>
+          <input type="radio" name="shadow-ray-start" onClick="SetShadowEpsilon(0);" />Zero
+        </td>
+        <td>
+          <input type="radio" name="shadow-ray-start" onClick="SetShadowEpsilon(0.001);" checked />Epsilon
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="shadow.js"></script>
+</body>
+
+</html>
