@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Shading</h1>
+  <div>
+    <canvas id="canvas" width=600 height=600 style="border: 1px grey solid"></canvas><br>
+    <table>
+      <tr>
+        <td><b>Lighting model</b></td>
+        <td>
+          <input type="radio" name="lighting-model" onClick="SetLightingModel(LM_DIFFUSE);">Diffuse only</input><br>
+          <input type="radio" name="lighting-model" onClick="SetLightingModel(LM_SPECULAR);">Specular only</input><br>
+          <input type="radio" name="lighting-model" onClick="SetLightingModel(LM_DIFFUSE | LM_SPECULAR);"
+            checked>Diffuse + Specular</input>
+        </td>
+      </tr>
+
+      <tr>
+        <td><b>Shading model</b></td>
+        <td>
+          <input type="radio" name="shading-model" onClick="SetShadingModel(SM_FLAT);">Flat</input><br>
+          <input type="radio" name="shading-model" onClick="SetShadingModel(SM_GOURAUD);">Gouraud</input><br>
+          <input type="radio" name="shading-model" onClick="SetShadingModel(SM_PHONG);" checked>Phong</input>
+        </td>
+      </tr>
+
+      <tr>
+        <td><b>Normals</b></td>
+        <td>
+          <input type="radio" name="vertex-normals" onClick="SetUseVertexNormals(false)">Computed triangle
+          normals</input><br>
+          <input type="radio" name="vertex-normals" onClick="SetUseVertexNormals(true)" checked>Vertex normals from
+          model</input>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="shading.js"></script>
+</body>
+
+</html>
