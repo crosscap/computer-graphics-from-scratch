@@ -1,0 +1,15 @@
+canvas {
+    border: 1px grey solid;
+}
+
+tr {
+    background-color: #e0e0e0;
+}
+
+div {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
